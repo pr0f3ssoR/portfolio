@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Hamza — Backend Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230d0f0e'/><text x='2' y='23' font-family='monospace' font-size='14' font-weight='700' fill='%234caf76'>&gt;_</text></svg>" />
+</head>
+
+<body>
+    <div class="topbar page">
+        <div class="topbar-dots">
+            <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+        </div>
+        <span class="topbar-path">~/portfolio/<span class="seg">ali-hamza</span></span>
+        <nav>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#background">background</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </div>
+
+    <div class="page">
+
+        <!-- ── Hero ── -->
+        <section class="hero">
+            <div class="prompt-line">
+                <span class="prompt-sign">$</span>
+                <span class="prompt-cmd">cat ./whoami.txt</span>
+            </div>
+
+            <h1 class="hero-name">Ali Hamza<span class="cursor"></span></h1>
+            <p class="hero-role">// Backend Developer</p>
+
+            <p class="hero-bio">
+                Self-taught backend developer with a strong focus on systems — APIs, databases and
+                real-time communication. Passionate progammer with
+                150+ LeetCode problems solved. I think in schemas,
+                write in Python, and debug with logs.
+            </p>
+
+            <div class="hero-meta">
+                <span class="badge"><span class="k">location: </span><span class="v">Lahore, PK</span></span>
+                <span class="badge"><span class="k">status: </span><span class="v green">open to work</span></span>
+                <span class="badge"><span class="k">focus: </span><span class="v">backend / systems</span></span>
+                <span class="badge"><span class="k">currently: </span><span class="v">building & learning</span></span>
+            </div>
+        </section>
+
+        <!-- ── Skills ── -->
+        <section id="skills">
+            <div class="section-header">
+                <h2>skills.json</h2>
+            </div>
+            <p class="section-comment"><span>/*</span> things I can build with, not just list on a résumé
+                <span>*/</span>
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Languages</div>
+                    <ul class="skill-list">
+                        <li>Python <span class="level solid">solid</span></li>
+                        <li>SQL <span class="level solid">solid</span></li>
+                        <li>JavaScript <span class="level learning">learning</span></li>
+                        <li>Bash / Shell <span class="level learning">learning</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Frameworks & APIs</div>
+                    <ul class="skill-list">
+                        <li>FastAPI <span class="level solid">solid</span></li>
+                        <li>Django <span class="level solid">solid</span></li>
+                        <li>SQLAlchemy (async) <span class="level solid">solid</span></li>
+                        <li>python-socketio <span class="level solid">solid</span></li>
+                        <li>Celery <span class="level learning">learning</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Databases</div>
+                    <ul class="skill-list">
+                        <li>PostgreSQL <span class="level solid">solid</span></li>
+                        <li>Redis <span class="level solid">solid</span></li>
+                        <li>Alembic (migrations) <span class="level solid">solid</span></li>
+                        <li>Query optimisation <span class="level solid">solid</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Problem Solving & Tooling</div>
+                    <ul class="skill-list">
+                        <li>DSA — 150+ LeetCode <span class="level solid">solved</span></li>
+                        <li>Postman / REST testing <span class="level solid">solid</span></li>
+                        <li>Git / GitHub <span class="level learning">learning</span></li>
+                        <li>Linux / Ubuntu <span class="level learning">learning</span></li>
+                        <li>Asynchronous / Multi thread programming <span class="level learning">learning</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── Projects ── -->
+        <section id="projects">
+            <div class="section-header">
+                <h2>projects/</h2>
+            </div>
+            <p class="section-comment"><span>/*</span> self-initiated projects — designed, architected, and built solo
+                <span>*/</span>
+            </p>
+
+            <div class="projects-list">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-head">
+                        <div class="project-name">
+                            <span class="icon">▸</span>
+                            Real-Time Chat System
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/pr0f3ssoR/live-chat-app">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        A Facebook Messenger–style one-to-one chat application built from scratch.
+                        Focused entirely on the backend: real-time delivery, persistence, and
+                        concurrency correctness. React frontend is minimal — it exists only to
+                        exercise the API surface.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tag hi">FastAPI</span>
+                        <span class="tag hi">PostgreSQL</span>
+                        <span class="tag hi">Redis</span>
+                        <span class="tag hi">python-socketio</span>
+                        <span class="tag hi">Celery</span>
+                        <span class="tag hi">SQLAlchemy (async)</span>
+                        <span class="tag hi">Alembic</span>
+                        <span class="tag hi">React</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-line"><span class="k">schema:</span> users, conversations, messages;
+                            circular FK resolved with nullable last_message_id</div>
+                        <div class="feature-line"><span class="k">realtime:</span> two-room WebSocket pattern (user room
+                            + conversation room) for targeted event delivery</div>
+                        <div class="feature-line"><span class="k">caching:</span> Redis for fast data access
+                            + update ops; conversation list cached with TTL</div>
+                        <div class="feature-line"><span class="k">pagination:</span> cursor-based (keyset) pagination
+                            for message history — no OFFSET drift</div>
+                        <div class="feature-line"><span class="k">concurrency:</span> DB-level row guards prevent
+                            duplicate conversation creation under race conditions</div>
+                        <div class="feature-line"><span class="k">celery:</span> Celery for background task processing
+                        </div>
+                    </div>
+                    <div class="project-video">
+                        <div class="project-video-label">
+                            <span class="dot"></span>
+                            demo.mp4 — real-time-chat-system
+                        </div>
+                        <div class="video-embed-wrap">
+                            <iframe src="https://www.youtube.com/embed/iR1UW_UfslM" title="Real-Time Chat System Demo"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-head">
+                        <div class="project-name">
+                            <span class="icon">▸</span>
+                            Django eCommerce Backend
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/pr0f3ssoR/django-ecommerce">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        A feature-rich eCommerce backend built with Django, focused on real-world backend architecture,
+                        relational data modeling, and performance optimization. Handles everything from dynamic product
+                        variants and cart sessions to Stripe payment processing — for both anonymous and authenticated
+                        users.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tag hi">Django</span>
+                        <span class="tag hi">Django Signals</span>
+                        <span class="tag hi">Stripe Api</span>
+                        <span class="tag hi">SQL</span>
+                        <span class="tag hi">Custom Backend Auth</span>
+                        <span class="tag hi">Session Management</span>
+                        <span class="tag hi">Authenticated & Anonymous User Management</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-line"><span class="k">products:</span> dynamic variants per product (e.g.
+                            Size, Color) with flexible attribute + value system; images on both products and variants
+                        </div>
+                        <div class="feature-line"><span class="k">auth:</span> custom user model + custom auth backend —
+                            login via email or username</div>
+                        <div class="feature-line"><span class="k">cart:</span> unified cart session for anonymous
+                            (Django session) and authenticated users</div>
+                        <div class="feature-line"><span class="k">orders:</span> order generation for both user types;
+                            tracking via order ID</div>
+                        <div class="feature-line"><span class="k">payments:</span> Stripe Sandbox API integration — card
+                            payments accepted at checkout</div>
+                        <div class="feature-line"><span class="k">orm:</span> select_related() for FK lookups,
+                            prefetch_related() for M2M, bulk ops to minimize query count</div>
+                        <div class="feature-line"><span class="k">signals:</span> file cleanup on model deletion via
+                            Django signals</div>
+                    </div>
+
+                    <div class="project-video">
+                        <div class="project-video-label">
+                            <span class="dot"></span>
+                            demo.mp4 — task-manager-api
+                        </div>
+                        <div class="video-embed-wrap">
+                            <iframe src="https://www.youtube.com/embed/njcx8luzQfA" title="Real-Time Chat System Demo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── Background ── -->
+        <section id="background">
+            <div class="section-header">
+                <h2>background/</h2>
+            </div>
+
+            <div class="selftaught-block">
+                <div class="selftaught-eyebrow">// on formal education</div>
+                <p class="selftaught-statement">No degree.<br>Just passion, persistence,<br>and a lot of late nights.
+                </p>
+                <p class="selftaught-body">
+                    I never went through a CS program. Everything I know — databases, APIs,
+                    system design, data structures — I taught myself, one problem at a time.
+                    I picked up Python, broke things, read docs at 2am, and built projects.
+                    That process taught me:
+                    how to figure things out when no one is guiding you.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── Contact ── -->
+        <section id="contact">
+            <div class="section-header">
+                <h2>contact</h2>
+            </div>
+
+            <div class="contact-block">
+                <p class="dim" style="font-size:12.5px;">
+                    I'm actively looking for backend / software engineering roles or internships.
+                    If you're building something interesting with Python or distributed systems,
+                    let's talk.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="lbl">email</span>
+                        <a href="mailto:ali@example.com">dev.pr0fessoralihamza@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="lbl">github</span>
+                        <a href="https://github.com/pr0f3ssoR" target="_blank">github.com/ali-hamza</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="lbl">linkedin</span>
+                        <a href="https://linkedin.com/in/ali-hamza-ab11123a7"
+                            target="_blank">linkedin.com/in/ali-hamza</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="lbl">location</span>
+                        <span>Lahore, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Footer ── -->
+        <footer>
+            <span>Ali Hamza © 2025</span>
+            <span class="green">// backend developer, Lahore PK</span>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
